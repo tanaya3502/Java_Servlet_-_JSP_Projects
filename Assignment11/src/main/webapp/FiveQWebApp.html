@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+form{
+		background:rgb(203, 204, 252);
+		width: 50%;
+		text-align: center;
+}
+.personal,.program,.message{
+	border: 2px;
+	border: solid black;
+	box-sizing: border-box;
+
+}
+h3{
+	color: red;
+}
+
+</style>
+</head>
+<body>
+	<center>
+	<form action="FiveQWebApp" method="post">
+		
+	<div class="personal"><h3>
+	&nbsp;Personal Information</h3><br>&nbsp;
+	Name:<input type="text" name="username"><br><br>&nbsp;
+	Password:<input type="password" name="password"><br><br>&nbsp;
+	Gender:<input type="radio" name="rd" value="Female">Female&nbsp;
+		   <input type="radio" name="rd" value="Male">Male<br><br>&nbsp;
+	Age: <input type="number" name="age" placeholder="<30 years">&nbsp;<br><br>
+	</div><br>
+	
+	<div class="program">
+	<h3>&nbsp;Programming Language</h3><br>
+	<input type="checkbox" name="ch" value="C">C
+	<input type="checkbox" name="ch" value="C++">C++
+	<input type="checkbox" name="ch" value="Java">Java
+	<input type="checkbox" name="ch" value="PHP">PHP
+	</div><br>
+	
+	<div class="message">
+	<h3>&nbsp;Message</h3>&nbsp;
+	<textarea name="message"></textarea>
+	</div><br>
+	
+	<input type="submit" value="Save">
+	<input type="reset" value="Clear"><br><br>
+	
+	<a href="FiveQDisplay.html">Display Information</a><br><br>
+	</form>	
+	</center>
+</body>
+</html>

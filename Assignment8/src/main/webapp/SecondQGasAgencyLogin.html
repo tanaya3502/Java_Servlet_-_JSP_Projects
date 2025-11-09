@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gas Booking System</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(113, 113, 113);
+        }
+        header{
+    		background-color: #f9f9f9;
+    		color: rgb(128, 128, 128);
+    		text-align: center; 
+    		font-size: 40px; 
+    		font-weight: bold; 
+    		padding-top:2px ;
+    		padding-bottom: 2px;
+    		border: 2px solid #ccc;
+            border-radius: 5px;
+		}
+		footer {
+    		background-color: #f9f9f9;
+    		color: rgb(128, 128, 128);
+    		text-align: center; 
+    		font-size: 20px; 
+    		font-weight: bold; 
+    		padding-top:20px ;
+    		padding-bottom: 20px;
+    		border: 2px solid #ccc;
+            border-radius: 5px;
+		}
+       .form {
+            margin: 15px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .admin{
+			color:rgb(0, 0, 0) ;
+			font-size: 20px; 
+		}
+    </style>
+</head>
+
+<body>
+    <center>
+		
+        <header><u>Gas Booking System</u></header>
+        <form action="SecondQGasAgencyLogin" method="post" class="form">
+            <h4>Please Login Here...</h4>
+            <form action="SecondQGasAgencyLogin" method="post">
+    	        <h4>Agency ID : <input type="text" name="agencyid" required></h4>
+    	        <h4>Password : <input type="password" name="password" required><br></h4>
+    	        <input type="submit" value="Login">
+        </form><br>
+</body>
+</html>

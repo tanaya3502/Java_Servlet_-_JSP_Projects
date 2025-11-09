@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Bookstore</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+            background-color: rgb(64, 0, 64);
+            color: #ffffff;
+            padding: 10px;
+        }  
+        .button{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgb(64, 0, 64);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>Welcome to the Cyber Bookstore</h1>
+
+    <form action="SecondQBookStore" method="post">
+        Select a Subject:<br><br>
+        <select name="book" id="subject" multiple>
+            <option value="Science">Science</option>
+            <option value="Maths">Maths</option>
+            <option value="Languages">Languages</option>
+            <option value="Others">Others</option>
+            <!-- Add more subjects as needed -->
+        </select><br>
+        <input type="submit" value="Submit" class="button">
+        <input type="reset" value="Reset" class="button">
+    </form>
+    </center>
+</body>
+</html>

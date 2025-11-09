@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gas Booking System</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(113, 113, 113);
+        }
+        header{
+    		background-color: #f9f9f9;
+    		color: rgb(128, 128, 128);
+    		text-align: center; 
+    		font-size: 40px; 
+    		font-weight: bold; 
+    		padding-top:2px ;
+    		padding-bottom: 2px;
+    		border: 2px solid #ccc;
+            border-radius: 5px;
+		}
+		footer {
+    		background-color: #f9f9f9;
+    		color: rgb(128, 128, 128);
+    		text-align: center; 
+    		font-size: 20px; 
+    		font-weight: bold; 
+    		padding-top:7px ;
+    		padding-bottom: 7px;
+    		border: 2px solid #ccc;
+            border-radius: 5px;
+		}
+       .form {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .a1{
+			color:rgb(255, 255, 255) ;
+			font-size: 20px; 
+		}
+    </style>
+</head>
+
+<body>
+    <center>
+		
+        <header><u>Gas Booking System</u></header>
+    
+        <form action="SecondQGasUserLogin" method="post" class="form">
+            <h1>Hello User</h2>
+            <h4>Please Login Here...</h4>
+            <h5>User ID : <input type="text" name="userid" required> </h3>
+            <h5>Password : <input type="password" name="password" required> </h5>
+            <input type="submit" value="Login">
+            <br><br>New User...
+            <a href="SecondQGasUserRegistration.html">SignUp</a>
+        </form><br>
+        <a href="SecondQGasAgencyLogin.html" class="a1">Agency</a><br><br>
+    <footer>
+		*****Now You Can Book Your Refill Cylinder Online*****<br>
+		Register With Your Phone Number<br>	  
+	    </footer>	
+		    
+    </center>
+    
+</body>
+
+</html>
+

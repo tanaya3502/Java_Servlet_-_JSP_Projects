@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gas Booking System</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(113, 113, 113);
+        }
+
+        header {
+            background-color: #f9f9f9;
+            color: rgb(128, 128, 128);
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form {
+            margin: 20px;
+            padding: 14px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 60%;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var userid = document.getElementById("userid").value;
+            var password = document.getElementById("password").value;
+            var contact = document.getElementById("contact").value;
+            var email = document.getElementById("email").value;
+
+            // Regular expressions for validation
+            var userIdPattern = /^U\d{4}$/;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            var contactPattern = /^\d{10}$/;
+            var passwordPattern = /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=!]).{6,}$/;
+
+            // Check if User Name contains only text
+            if (!/^[A-Za-z\s]+$/.test(username)) {
+                alert("User Name should contain only text.");
+                return false;
+            }
+
+            // Check if User ID matches the pattern
+            if (!userIdPattern.test(userid)) {
+                alert("User ID should start with 'U' followed by four numbers.");
+                return false;
+            }
+
+            // Check if Password matches the pattern
+            if (!passwordPattern.test(password)) {
+                alert("Password should contain at least 6 characters, including 1 digit, 1 special character, and 1 letter.");
+                return false;
+            }
+
+            // Check if Contact matches the pattern
+            if (!contactPattern.test(contact)) {
+                alert("Contact should be a 10-digit number.");
+                return false;
+            }
+
+            // Check if Email matches the pattern
+            if (!emailPattern.test(email)) {
+                alert("Invalid Email Address.");
+                return false;
+            }
+
+            return true; // Form is valid
+        }
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <header><u>Gas Booking System</u></header>
+        <form action="SecondQGasUserRegistration" method="post" onsubmit="return validateForm()">
+           <!-- <h1>Hello User</h1>-->
+            <h2>Please Register Here...</h2>
+            <h5>User Name : <input type="text" name="username" id="username" required> </h5>
+            <h5>User ID : <input type="text" name="userid" id="userid" required> </h5>
+            <h5>Password : <input type="password" name="password" id="password" required></h5>
+            <h5>Contact : <input type="text" name="contact" id="contact" required> </h5>
+            <h5>Email ID : <input type="email" name="email" id="email" required> </h5>
+            <input type="submit" value="Register" name="register">
+            <br><br> Already Registered? <a href="SecondQMainPage.html">Login</a>
+        </form>
+    </center>
+</body>
+
+</html>

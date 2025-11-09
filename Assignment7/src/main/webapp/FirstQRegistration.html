@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	form {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 58vh;  
+    margin-top: 10px;
+}
+	
+	h1 {
+    margin-top: -7px;
+    color: white;
+    background-color: rgb(0, 0, 64);
+    padding-left: 29px;
+    padding-right: 57px;
+}
+     .button{
+     margin-top: 10px;
+	 padding: 10px 20px;
+	 background-color: rgb(0, 0, 64);
+ 	 color: white;
+	 border: none;
+	 cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<center>
+	<form action="FirstQRegistration" method="post">
+	<h1>Registration Page</h1>
+	Name:<input type="text" name="username" placeholder="Enter Your Name"><br><br>
+	Password:<input type="password" name="password" placeholder="Enter Password"><br><br>
+	Email ID:<input type="email" name="email" placeholder="Enter Email ID"><br><br>
+	Contact No:<input type="text" name="contact" placeholder="Enter Contact"><br><br>
+	<input type="submit" value="Registration"><br>
+	<input type="reset" value="Reset"><br>
+	<a href="FirstQLogin.html">Login Here</a>
+	</form>	
+	</center>
+</body>
+</html>

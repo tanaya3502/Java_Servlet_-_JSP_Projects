@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Voting Eligibility</title>
+
+<style>
+	form {
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 68vh;
+    margin-left: 531px;
+    margin-top: 50px;
+}
+	
+	h1 {
+    margin-top: -7px;
+    color: white;
+    background-color: rgb(0, 0, 64);
+    padding-left: 29px;
+    padding-right: 57px;
+}
+     .button{
+     margin-top: 10px;
+	 padding: 10px 20px;
+	 background-color: rgb(0, 0, 64);
+ 	 color: white;
+	 border: none;
+	 cursor: pointer;
+
+</style>
+</head>
+<body>
+
+<form action="ThirdQVoter" method="post">
+	<h1>Voter Eligibility Check</h1><br>
+	
+		Name<input type="text" name="name" ><br><br>
+		Age<input type="text" name="age" ><br><br>
+
+		<input type="submit" value="Check" class="button">
+		<input type="reset" value="reset" class="button">	
+</form>
+</body>
+</html>

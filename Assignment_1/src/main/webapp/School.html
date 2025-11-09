@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+	<h1>School Form</h1>
+
+	<form method="post" action="School">
+		
+		Email:<input type="email"  name="email" ><br></br>
+		
+		Password:<input type="password"  name="password"><br></br>
+		
+		Birthday:<input type="date"  name="birthday"><br></br>
+		
+		New Student?:
+		<input type="radio" name="option" value="Yes">Yes
+        <input type="radio" name="option" value="No">No<br></br>
+        
+        College:<input type="text" id="college" name="college"><br></br>
+        
+		Choose a Major:
+			  <select name="major" >
+			    <option value="Computer Science">Computer Science</option>
+			    <option value="Blockchain">Blockchain</option>
+			    <option value="Data Science">Data Science</option>
+  			</select><br></br>
+		Favourite Color:<input type="color"  name="selectedColor"><br></br>
+		
+       	Terms and Conditions:<input type="checkbox" name="terms" required/> I agree<br></br>
+       	
+        <input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+	</form>
+	</center>
+</body>
+</html>
